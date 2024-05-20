@@ -23,6 +23,8 @@ defineProps<{ msg: string }>()
 
 const count = ref(store.state.count)
 
+const x = 13;
+
 const increment = () => {
   store.commit('increment')
   count.value = store.state.count
